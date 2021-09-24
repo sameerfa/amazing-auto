@@ -11,6 +11,7 @@ export default function Layout({ title, description, children }) {
           {title ? `${title} - Amazing Auto` : "Amazing Auto - Chennai's HiTech Auto Rickshaw"}
         </title>
         {description && <meta name="description" content={description}></meta>}
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon"></link>
       </Head>
       <Navbar />
       {children}

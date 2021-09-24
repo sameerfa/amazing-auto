@@ -7,7 +7,13 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { Instagram, Twitter, YouTube, Facebook, GitHub, LinkedIn } from "@material-ui/icons";
+import {
+  Instagram,
+  Twitter,
+  Facebook,
+  GitHub,
+  LinkedIn,
+} from "@material-ui/icons";
 import { ReactNode } from "react";
 
 const SocialButton = ({
@@ -60,22 +66,36 @@ export default function Footer() {
       >
         <Text>© {year.getFullYear()} Amazing Auto. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Instagram"} href={"#"}>
+          <SocialButton
+            label={"Instagram"}
+            href={"https://www.instagram.com/auto_anna/?hl=en"}
+          >
             <Instagram />
           </SocialButton>
-          <SocialButton label={"LinkedIn"} href={"#"}>
+          <SocialButton
+            label={"LinkedIn"}
+            href={
+              "https://www.linkedin.com/in/anna-durai-ba92727b/?originalSubdomain=in"
+            }
+          >
             <LinkedIn />
           </SocialButton>
-          <SocialButton label={"Twitter"} href={"#"}>
+          <SocialButton
+            label={"Twitter"}
+            href={"https://twitter.com/amazingauto5758?lang=en"}
+          >
             <Twitter />
           </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <YouTube />
-          </SocialButton>
-          <SocialButton label={"Facebook"} href={"#"}>
+          <SocialButton
+            label={"Facebook"}
+            href={"https://www.facebook.com/autoanna"}
+          >
             <Facebook />
           </SocialButton>
-          <SocialButton label={"GitHub"} href={"#"}>
+          <SocialButton
+            label={"GitHub"}
+            href={"https://github.com/sameerfa/amazing-auto"}
+          >
             <GitHub />
           </SocialButton>
         </Stack>

@@ -25,7 +25,11 @@ export default function BookARide() {
         py={[0, 0, 0]}
         direction={{ base: "column", md: "column" }}
       >
-        <TopBanner />
+        <TopBanner
+          title="Book a ride"
+          bgImage=""
+          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus aut asperiores, dolorem qui, distinctio molestias consequuntur quisquam dolore excepturi eaque. Incidunt excepturi porro id magni non delectus totam vero."
+        />
         <VStack w="full" h="full" p={100} spacing={10} alignItems="flex-start">
           <VStack spacing={3} alignItems="flex-start">
             <Heading size="2xl">Your details</Heading>

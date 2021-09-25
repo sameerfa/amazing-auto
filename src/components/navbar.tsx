@@ -17,8 +17,8 @@ import {
   Center,
   useColorMode,
   Heading,
+  Image,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 export default function Navbar() {
@@ -65,7 +65,7 @@ export default function Navbar() {
               height={50}
             />
             <Heading
-              size="md"
+              size="[xs, md]"
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
               fontFamily={"heading"}
               color={useColorModeValue("gray.800", "white")}
@@ -88,7 +88,13 @@ export default function Navbar() {
           <Center>
             <Switch onChange={toggleColorMode} />
           </Center>
-          <Button variant="primary" colorScheme="brand" size="md" w="full">
+          <Button
+            variant="primary"
+            colorScheme="brand"
+            size="md"
+            w="full"
+            display={["none", "none", "flex"]}
+          >
             <Link href="tel:+919884123413">Call Me</Link>
           </Button>
         </Stack>

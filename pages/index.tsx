@@ -1,4 +1,3 @@
-// connect forms and social profiles
 // image slider on home page
 // theme color and font sizes
 // mobile responsiveness

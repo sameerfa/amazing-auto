@@ -1,20 +1,22 @@
 import {
   Flex,
   VStack,
-  Heading,
-  Text,
   SimpleGrid,
   GridItem,
-  Select,
-  Checkbox,
   Button,
-  FormControl,
-  FormLabel,
-  Input,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import {
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Phone,
+  Twitter,
+  WhatsApp,
+} from "@material-ui/icons";
 import TopBanner from "../src/components/topBanner";
 import Layout from "../src/theme/layout";
+import NextLink from "next/link";
 
 export default function GetInTouch() {
   const colSpan = useBreakpointValue({ base: 2, md: 1 });
@@ -27,55 +29,70 @@ export default function GetInTouch() {
       >
         <TopBanner
           title="Get in touch"
-          bgImage=""
-          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus aut asperiores, dolorem qui, distinctio molestias consequuntur quisquam dolore excepturi eaque. Incidunt excepturi porro id magni non delectus totam vero."
+          bgImage="/images/get-in-touch.jpg"
+          subtitle="I'm Annadurai, an Auto Driver, Social Entrepreneur, 7 Time TEDx Speaker, Motivational Speaker and Corporate Trainer. Get in touch if you want to meet up."
         />
         <VStack w="full" h="full" p={100} spacing={10} alignItems="flex-start">
-          <VStack spacing={3} alignItems="flex-start">
-            <Heading size="2xl">Your details</Heading>
-            <Text>If you already have an account, click here to log in.</Text>
-          </VStack>
           <SimpleGrid columns={2} columnGap={3} rowGap={6} w="full">
             <GridItem colSpan={colSpan}>
-              <FormControl>
-                <FormLabel>First Name</FormLabel>
-                <Input placeholder="John" />
-              </FormControl>
+              <NextLink
+                href="https://api.whatsapp.com/send?phone=919884123413"
+                passHref
+              >
+                <Button w="full" colorScheme="brand">
+                  <WhatsApp />
+                  &nbsp;Whatsapp
+                </Button>
+              </NextLink>
             </GridItem>
             <GridItem colSpan={colSpan}>
-              <FormControl>
-                <FormLabel>Last Name</FormLabel>
-                <Input placeholder="Doe" />
-              </FormControl>
-            </GridItem>
-            <GridItem colSpan={2}>
-              <FormControl>
-                <FormLabel>Address</FormLabel>
-                <Input placeholder="Blvd. Broken Dreams 21" />
-              </FormControl>
+              <NextLink href="tel:+919884123413" passHref>
+                <Button w="full" colorScheme="brand">
+                  <Phone />
+                  &nbsp;Call
+                </Button>
+              </NextLink>
             </GridItem>
             <GridItem colSpan={colSpan}>
-              <FormControl>
-                <FormLabel>City</FormLabel>
-                <Input placeholder="San Franciso" />
-              </FormControl>
+              <NextLink href="https://www.facebook.com/autoanna" passHref>
+                <Button w="full" colorScheme="brand">
+                  <Facebook />
+                  &nbsp;Facebook
+                </Button>
+              </NextLink>
             </GridItem>
             <GridItem colSpan={colSpan}>
-              <FormControl>
-                <FormLabel>Country</FormLabel>
-                <Select>
-                  <option></option>
-                  <option value="usa">United States of America</option>
-                </Select>
-              </FormControl>
+              <NextLink
+                href="https://twitter.com/amazingauto5758?lang=en"
+                passHref
+              >
+                <Button w="full" colorScheme="brand">
+                  <Twitter />
+                  &nbsp;Twitter
+                </Button>
+              </NextLink>
             </GridItem>
-            <GridItem colSpan={2}>
-              <Checkbox defaultChecked>Ship to billing address.</Checkbox>
+            <GridItem colSpan={colSpan}>
+              <NextLink
+                href="https://www.linkedin.com/in/anna-durai-ba92727b/?originalSubdomain=in"
+                passHref
+              >
+                <Button w="full" colorScheme="brand">
+                  <LinkedIn />
+                  &nbsp;LinkedIn
+                </Button>
+              </NextLink>
             </GridItem>
-            <GridItem colSpan={2}>
-              <Button variant="primary" colorScheme="brand" size="lg" w="full">
-                Place Order
-              </Button>
+            <GridItem colSpan={colSpan}>
+              <NextLink
+                href="https://www.instagram.com/auto_anna/?hl=en"
+                passHref
+              >
+                <Button w="full" colorScheme="brand">
+                  <Instagram />
+                  &nbsp;Instagram
+                </Button>
+              </NextLink>
             </GridItem>
           </SimpleGrid>
         </VStack>

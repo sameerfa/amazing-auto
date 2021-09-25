@@ -2,7 +2,7 @@ const data = {
   features: [
     {
       id: 1,
-      title: "10+ Daily Newspapers",
+      title: "8+ Daily Newspapers",
       text: "be informed about what's happening around",
     },
     {
@@ -59,6 +59,16 @@ const data = {
       id: 12,
       title: "Special Day Offers",
       text: "mothers day, teachers day, my birthday, your birthday...",
+    },
+    {
+      id: 13,
+      title: "Umbrella",
+      text: "take one when you deboard, bring back or drop at select stores",
+    },
+    {
+      id: 14,
+      title: "Hand Sanitizers",
+      text: "need to keep ourself save from corona virus",
     },
   ],
   talks: [

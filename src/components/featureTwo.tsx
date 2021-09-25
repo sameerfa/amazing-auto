@@ -28,7 +28,7 @@ export default function FeatureTwo() {
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={5}>
           {data.features.map((feature) => (
             <HStack key={feature.id} align={"top"}>
-              <Box color={"brand.400"} px={2}>
+              <Box color={"brand.600"} px={2}>
                 <Icon as={CheckIcon} />
               </Box>
               <VStack align={"start"}>

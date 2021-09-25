@@ -16,17 +16,14 @@ const inputSelectStyles = {
       },
     },
   },
-  sizes: {
-    md: {
-      field: {
-        borderRadius: "none",
-      },
-    },
-  },
 };
 
 const brandRing = {
   _focus: {
+    ring: 2,
+    ringColor: "brand.500",
+  },
+  _active: {
     ring: 2,
     ringColor: "brand.500",
   },
@@ -39,13 +36,13 @@ const theme = extendTheme(
         50: "#f5fee5",
         100: "#fbfbbb",
         200: "#f1f781",
-        300: "#eeee56",
-        400: "#e0d732",
-        500: "#c9ba19",
-        600: "#aba309",
-        700: "#867402",
-        800: "#5e5800",
-        900: "#333000",
+        300: "#ffe369",
+        400: "#ffe15e",
+        500: "#fcdc4e",
+        600: "#FEDB41",
+        700: "#FCBF29",
+        800: "#FEA832",
+        900: "#FE9923",
       },
     },
     fonts: {
@@ -57,15 +54,15 @@ const theme = extendTheme(
         variants: {
           primary: (props) => ({
             ...brandRing,
-            color: mode("white", "gray.800")(props),
-            backgroundColor: mode("brand.500", "brand.200")(props),
+            color: mode("brand.50", "gray.800")(props),
+            backgroundColor: mode("brand.700", "brand.200")(props),
 
             _hover: {
               backgroundColor: mode("brand.600", "brand.300")(props),
             },
 
             _active: {
-              backgroundColor: mode("brand.700", "brand.400")(props),
+              backgroundColor: mode("brand.500", "brand.400")(props),
             },
           }),
         },
@@ -84,7 +81,7 @@ const theme = extendTheme(
   },
   withDefaultColorScheme({
     colorScheme: "brand",
-    components: ["Checkbox"],
+    components: ["Checkbox", "Switch"],
   }),
   withDefaultVariant({
     variant: "filled",

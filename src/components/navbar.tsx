@@ -61,15 +61,19 @@ export default function Navbar() {
             <Image
               src="/images/tuk-tuk.png"
               alt="logo"
-              width={50}
-              height={50}
+              borderRadius="base"
+              objectFit="cover"
+              loading="lazy"
+              boxSize={["50px"]}
             />
             <Heading
-              size="[xs, md]"
-              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              fontSize={["xl", "xl"]}
+              fontWeight={"bold"}
+              textAlign={useBreakpointValue({ base: "left", md: "left" })}
               fontFamily={"heading"}
               color={useColorModeValue("gray.800", "white")}
               ml={5}
+              w="full"
             >
               Amazing Auto
             </Heading>
@@ -108,8 +112,8 @@ export default function Navbar() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
+  const linkColor = useColorModeValue("gray.900", "gray.200");
+  const linkHoverColor = useColorModeValue("brand.500", "brand.200");
 
   return (
     <Stack direction={"row"} spacing={4}>
@@ -121,12 +125,18 @@ const DesktopNav = () => {
                 <Link
                   p={2}
                   href={navItem.href ?? "#"}
-                  fontSize={"sm"}
+                  fontSize={["xs", "md"]}
                   fontWeight={500}
                   color={linkColor}
+                  fontFamily={"heading"}
                   _hover={{
                     textDecoration: "none",
                     color: linkHoverColor,
+                  }}
+                  _active={{
+                    textDecoration: "none",
+                    color: linkHoverColor,
+                    border: "none",
                   }}
                 >
                   {navItem.label}

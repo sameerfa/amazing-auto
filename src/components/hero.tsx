@@ -1,12 +1,4 @@
-import {
-  Flex,
-  Container,
-  Heading,
-  Stack,
-  Text,
-  Button,
-  Center,
-} from "@chakra-ui/react";
+import { Container, Heading, Stack, Text, Button } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { motion } from "framer-motion";
 
@@ -40,7 +32,7 @@ export default function Hero() {
             fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            <Text as={"span"} color="brand.400">
+            <Text as={"span"} color="brand.700">
               Atithi{" "}
             </Text>
             Devo Bhava

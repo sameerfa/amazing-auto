@@ -47,7 +47,11 @@ export default function BookARide() {
   };
 
   return (
-    <Layout title="Book a Ride" description="">
+    <Layout
+      title="Book a Ride"
+      description="Take a Ride in Anna Durai's Amazing Auto. Fully-loaded from Masks to Magazines. Send your details now, 
+    I will be in touch with you based on trip availability."
+    >
       <Flex
         h="auto"
         py={[0, 0, 0]}

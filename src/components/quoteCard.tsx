@@ -43,7 +43,7 @@ export default function QuoteCard() {
   return (
     <Flex
       textAlign={"center"}
-      pt={10}
+      p={[10, 10]}
       justifyContent={"center"}
       direction={"column"}
       width={"full"}

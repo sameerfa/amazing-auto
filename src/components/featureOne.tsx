@@ -44,10 +44,10 @@ export default function FeatureOne() {
         <Stack spacing={4}>
           <Text
             textTransform={"uppercase"}
-            color={"brand.400"}
+            color={useColorModeValue("brand.900", "brand.200")}
             fontWeight={600}
             fontSize={"sm"}
-            bg={useColorModeValue("brand.50", "brand.900")}
+            bg={useColorModeValue("brand.200", "brand.900")}
             p={2}
             alignSelf={"flex-start"}
             rounded={"md"}

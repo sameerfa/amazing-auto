@@ -224,6 +224,152 @@ const data = {
       link: "https://yourstory.com/2016/09/annadurai-chennai/amp",
     },
   ],
+  gallery: [
+    {
+      id: 1,
+      image: "/gallery/01.jpg",
+    },
+    {
+      id: 2,
+      image: "/gallery/02.jpg",
+    },
+    {
+      id: 3,
+      image: "/gallery/03.jpg",
+    },
+    {
+      id: 4,
+      image: "/gallery/04.jpg",
+    },
+    {
+      id: 5,
+      image: "/gallery/05.jpg",
+    },
+    {
+      id: 6,
+      image: "/gallery/06.jpg",
+    },
+    {
+      id: 7,
+      image: "/gallery/07.jpg",
+    },
+    {
+      id: 8,
+      image: "/gallery/08.jpg",
+    },
+    {
+      id: 9,
+      image: "/gallery/09.jpg",
+    },
+    {
+      id: 10,
+      image: "/gallery/10.jpg",
+    },
+    {
+      id: 11,
+      image: "/gallery/11.jpg",
+    },
+    {
+      id: 12,
+      image: "/gallery/12.jpg",
+    },
+    {
+      id: 13,
+      image: "/gallery/13.jpg",
+    },
+    {
+      id: 14,
+      image: "/gallery/14.jpg",
+    },
+    {
+      id: 15,
+      image: "/gallery/15.jpg",
+    },
+    {
+      id: 16,
+      image: "/gallery/16.jpg",
+    },
+    {
+      id: 17,
+      image: "/gallery/17.jpg",
+    },
+    {
+      id: 18,
+      image: "/gallery/18.jpg",
+    },
+    {
+      id: 19,
+      image: "/gallery/19.jpg",
+    },
+    {
+      id: 20,
+      image: "/gallery/20.jpg",
+    },
+    {
+      id: 21,
+      image: "/gallery/21.jpg",
+    },
+    {
+      id: 22,
+      image: "/gallery/22.jpg",
+    },
+    {
+      id: 23,
+      image: "/gallery/23.jpg",
+    },
+    {
+      id: 24,
+      image: "/gallery/24.jpg",
+    },
+    {
+      id: 25,
+      image: "/gallery/25.jpg",
+    },
+    {
+      id: 26,
+      image: "/gallery/26.jpg",
+    },
+    {
+      id: 27,
+      image: "/gallery/27.jpg",
+    },
+    {
+      id: 28,
+      image: "/gallery/28.jpg",
+    },
+    {
+      id: 29,
+      image: "/gallery/29.jpg",
+    },
+    {
+      id: 30,
+      image: "/gallery/30.jpg",
+    },
+    {
+      id: 31,
+      image: "/gallery/31.jpg",
+    },
+    {
+      id: 32,
+      image: "/gallery/32.jpg",
+    },
+    {
+      id: 33,
+      image: "/gallery/33.jpg",
+    },
+    {
+      id: 34,
+      image: "/gallery/34.jpg",
+    },
+    {
+      id: 35,
+      image: "/gallery/35.jpg",
+    },
+    {
+      id: 36,
+      image: "/gallery/36.jpg",
+    },
+  ],
 };
 
 export default data;

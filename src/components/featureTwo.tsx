@@ -8,6 +8,7 @@ import {
   Stack,
   HStack,
   VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 import data from "../../utils/data";
@@ -33,7 +34,9 @@ export default function FeatureTwo() {
               </Box>
               <VStack align={"start"}>
                 <Text fontWeight={600}>{feature.title}</Text>
-                <Text color={"gray.600"}>{feature.text}</Text>
+                <Text color={useColorModeValue("gray.900", "gray.400")}>
+                  {feature.text}
+                </Text>
               </VStack>
             </HStack>
           ))}

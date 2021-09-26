@@ -52,7 +52,7 @@ export default function QuoteCard() {
         <chakra.h2
           margin={"auto"}
           fontWeight={"medium"}
-          color={useColorModeValue("gray.500", "gray.400")}
+          color={useColorModeValue("gray.900", "gray.400")}
         >
           See what over{" "}
           <chakra.strong color={useColorModeValue("gray.700", "gray.50")}>
